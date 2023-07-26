@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class="mx-36">
+        <!-- nav section -->
+        <nav class=" navbar  flex px-10 py-4  bg-[#F85559] rounded-full my-14 bg-base-100 ">
+           <div>
+                <ul class="gap-12">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Shop</a>
+                    <a href="">All Fruit</a>
+                </ul>
+            </div>
+            <div class="flex items-center pl-40">
+                <img  src="images/logo.png">
+                <a class="btn btn-ghost text-white font-bold ">Fruit Brust</a>
+            </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                </div>
+            </div>
+        </nav>
+         <!--carusel or banner  -->
+         <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle mt-32">❮</a> 
+                <div class=" text-center ">
+                    <h1 class="text-2xl lg:text-7xl text-white font-bold items-middle">Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-[#FFF] mt-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559]   text-white mt-8">Shop Now</button>
+                </div>
+                <a href="#slide2" class="btn btn-circle mt-32">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle mt-32">❮</a> 
+                <div class=" text-center ">
+                    <h1 class="text-2xl lg:text-7xl text-white font-bold items-middle">Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-[#FFF] mt-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559]   text-white mt-8">Shop Now</button>
+                </div>
+                <a href="#slide3" class="btn btn-circle mt-32">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle mt-32">❮</a> 
+                <div class=" text-center ">
+                    <h1 class="text-2xl lg:text-7xl text-white font-bold items-middle">Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-[#FFF] mt-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559]   text-white mt-8">Shop Now</button>
+                </div>
+                <a href="#slide4" class="btn btn-circle mt-32">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle mt-32">❮</a>
+                <div class=" text-center ">
+                    <h1 class="text-2xl lg:text-7xl text-white font-bold items-middle">Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-[#FFF] mt-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559]   text-white mt-8">Shop Now</button>
+                </div> 
+                <a href="#slide1" class="btn btn-circle mt-32">❯</a>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <section class="mx-36 flex gap-[338px]">
+            <div class="mt-36">
+                <h1 class="text-black text-5xl">Deal of the day</h1>
+                <p class="text-[ #12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-flow-col gap-5 text-center  auto-cols-max mt-36">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:1;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit6.png" alt="apple" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p>Apples</p>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Details</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
